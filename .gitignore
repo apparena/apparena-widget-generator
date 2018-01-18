@@ -1,2 +1,7 @@
 node_modules
 coverage
+
+
+.idea/*
+!.idea/codeStyleSettings.xml
+atlassian-ide-plugin.xml
