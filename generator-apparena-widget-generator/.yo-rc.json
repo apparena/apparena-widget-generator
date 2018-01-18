@@ -1,0 +1,9 @@
+{
+  "generator-node": {
+    "promptValues": {
+      "authorName": "App-Arena GmbH",
+      "authorEmail": "hello@app-arena.com",
+      "authorUrl": "https://www.app-arena.com"
+    }
+  }
+}
