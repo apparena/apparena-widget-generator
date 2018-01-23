@@ -1,6 +1,6 @@
 {
   "name": "generator-apparena-widget",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generator to create a new Widget for the App-Arena Platform",
   "homepage": "https://components.app-arena.com/#/software/software-widgets",
   "author": {
@@ -60,6 +60,6 @@
     },
     "plugins": ["prettier"]
   },
-  "repository": "apparena/generator-apparena-widget",
+  "repository": "apparena/apparena-widget-generator",
   "license": "MIT"
 }
