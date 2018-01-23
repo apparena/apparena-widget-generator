@@ -1,13 +1,13 @@
-# generator-apparena-widget-generator [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
+# generator-apparena-widget [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Dependency Status][daviddm-image]][daviddm-url]
 > Generator to create a new Widget for the App-Arena Platform
 
 ## Installation
 
-First, install [Yeoman](http://yeoman.io) and generator-apparena-widget-generator using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
+First, install [Yeoman](http://yeoman.io) and generator-apparena-widget using [npm](https://www.npmjs.com/) (we assume you have pre-installed [node.js](https://nodejs.org/)).
 
 ```bash
 npm install -g yo
-npm install -g generator-apparena-widget-generator
+npm install -g generator-apparena-widget
 ```
 
 Then generate your new project:
@@ -28,9 +28,9 @@ yo apparena-widget-generator
 MIT © [App-Arena GmbH](https://www.app-arena.com)
 
 
-[npm-image]: https://badge.fury.io/js/generator-apparena-widget-generator.svg
-[npm-url]: https://npmjs.org/package/generator-apparena-widget-generator
-[travis-image]: https://travis-ci.org/apparena/generator-apparena-widget-generator.svg?branch=master
-[travis-url]: https://travis-ci.org/apparena/generator-apparena-widget-generator
-[daviddm-image]: https://david-dm.org/apparena/generator-apparena-widget-generator.svg?theme=shields.io
-[daviddm-url]: https://david-dm.org/apparena/generator-apparena-widget-generator
+[npm-image]: https://badge.fury.io/js/generator-apparena-widget.svg
+[npm-url]: https://npmjs.org/package/generator-apparena-widget
+[travis-image]: https://travis-ci.org/apparena/generator-apparena-widget.svg?branch=master
+[travis-url]: https://travis-ci.org/apparena/generator-apparena-widget
+[daviddm-image]: https://david-dm.org/apparena/generator-apparena-widget.svg?theme=shields.io
+[daviddm-url]: https://david-dm.org/apparena/generator-apparena-widget

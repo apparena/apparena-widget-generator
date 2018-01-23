@@ -1,0 +1,14 @@
+.vagrant
+dist/
+node_modules
+jspm_packages
+.serverless
+
+
+.DS_Store
+
+/npm-debug.log
+.idea/*
+/.babel-cache/
+/.webpack-cache/
+/config/.webpack-cache/

@@ -1,0 +1,14 @@
+{
+  "presets": [["env", {
+    "targets": {
+      "browsers": ["Chrome >= 61"]
+    }}], "react", "stage-0"],
+  "plugins": [
+    "syntax-trailing-function-commas",
+    "transform-class-properties",
+    "transform-object-rest-spread",
+    "transform-decorators-legacy",
+    "transform-async-to-generator",
+    "transform-runtime"
+  ]
+}

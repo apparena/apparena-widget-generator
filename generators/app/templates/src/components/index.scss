@@ -1,0 +1,38 @@
+$btn-primary-color: #ccc !default;
+$btn-primary-bg: #ccc !default;
+
+.widget {
+  .inner {
+    background-color: #363d4d;
+    border-radius: 5px;
+
+    .close-button {
+      font-size: 22px;
+      font-family: sans-serif;
+      color: darken(white, 15%);
+      float: right;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .widgetContainer {
+      color: white;
+      padding: 20px;
+    }
+  }
+
+  .branding {
+    margin-top: 15px;
+    text-align: center;
+    color: #363d4d;
+    font-family: sans-serif;
+    font-size: 12px;
+
+    img {
+      display: inline-block;
+      width: 80px;
+      vertical-align: text-top;
+      padding-left: 3px;
+    }
+  }
+}

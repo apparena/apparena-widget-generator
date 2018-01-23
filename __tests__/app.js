@@ -3,15 +3,14 @@ const path = require('path');
 const assert = require('yeoman-assert');
 const helpers = require('yeoman-test');
 
-describe('generator-apparena-widget-generator:app', () => {
+describe('generator-apparena-widget:app', () => {
   beforeAll(() => {
-    return helpers.run(path.join(__dirname, '../generators/app'))
-      .withPrompts({someAnswer: true});
+    return helpers
+      .run(path.join(__dirname, '../generators/app'))
+      .withPrompts({ someAnswer: true });
   });
 
   it('creates files', () => {
-    assert.file([
-      'dummyfile.txt'
-    ]);
+    assert.file(['dummyfile.txt']);
   });
 });

@@ -1,0 +1,34 @@
+[
+  {
+    "configId": "survey_prompt",
+    "value": "Welche App hast du schon gekauft?"
+  },
+  {
+    "configId": "app_id",
+    "value": 21571
+  },
+  {
+    "configId": "answer_1_text",
+    "value": "Tippspiel"
+  },
+  {
+    "configId": "answer_2_text",
+    "value": "Fotowettbewerb"
+  },
+  {
+    "configId": "answer_3_text",
+    "value": "Adventskalender"
+  },
+  {
+    "configId": "answer_4_text",
+    "value": "Quiz"
+  },
+  {
+    "configId": "thankyou_page_content",
+    "value": "Dankeschön"
+  },
+  {
+    "configId": "final_page_select",
+    "value": "aa_config_final_page_select"
+  }
+]
