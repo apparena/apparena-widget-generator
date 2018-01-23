@@ -13,7 +13,7 @@ npm install -g generator-apparena-widget
 Then generate your new project:
 
 ```bash
-yo apparena-widget-generator
+yo apparena-widget
 ```
 
 ## Getting To Know Yeoman
