@@ -1,6 +1,6 @@
 {
   "name": "generator-apparena-widget",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Generator to create a new Widget for the App-Arena Platform",
   "homepage": "https://components.app-arena.com/#/software/software-widgets",
   "author": {
