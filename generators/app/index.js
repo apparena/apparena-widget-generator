@@ -215,7 +215,7 @@ module.exports = class extends Generator {
 
     this.fs.copy(this.templatePath('README.md'), this.destinationPath('README.md'));
 
-    this.fs.copy(this.templatePath('.gitignore'), this.destinationPath('.gitignore'));
+    this.fs.copy(this.templatePath('gitignore'), this.destinationPath('gitignore'));
 
     this.fs.copy(this.templatePath('src'), this.destinationPath('src'));
 
