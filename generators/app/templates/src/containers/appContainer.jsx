@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import PropTypes from 'prop-types';
 import {Router} from "react-router";
 import {Provider} from "react-redux";
+import {hot} from 'react-hot-loader';
 
 class AppContainer extends Component {
     static propTypes = {
@@ -26,4 +27,4 @@ class AppContainer extends Component {
     }
 }
 
-export default AppContainer
+export default hot(module)(AppContainer);

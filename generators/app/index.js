@@ -240,11 +240,8 @@ module.exports = class extends Generator {
         '\n' +
         '\nType ' +
         chdir +
-        "'yarn run build:watch' to build the js-file." +
-        '\n' +
-        '\nOpen ' +
-        chdir +
-        '/index.html in your browser.'
+        "'yarn start' to start developing." +
+        '\n'
     );
   }
 };
