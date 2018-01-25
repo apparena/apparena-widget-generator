@@ -20,7 +20,13 @@ this.props.page(); //Page tracking call
 ```
 
 ## Use App-Arena config values
-To build a Widget with custom App-Arena config values all `aa_config_{configId}` values are replaced by the customers config values
-1. Define all your configIds and Values in the `src/config/aa_config.json` (see the file for an example)
+To build a Widget with custom App-Arena config values all `aa_config_{configId}`
+values are replaced by the customers config values
+
+1. Define all your configIds and Values in the `src/config/aa_config.json`
+(see the file for an example)
 2. All Configs will be writen into the config-reducer inside the redux store.
-3. Run `yarn run build` or `yarn run build:production` and then `yarn run aa:config:replace` to build a widget main js file and replace your config values with the values inside of `build/apparena/config.json`
+3. Run `yarn run build` or `yarn run build:prod` and then
+`yarn run aa:config:replace` to build a widget main js file and replace
+your config values with the values inside of `build/apparena/config.json`
+
