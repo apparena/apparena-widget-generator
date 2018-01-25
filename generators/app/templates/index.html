@@ -1,13 +1,27 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>App-Arena Widget</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>App-Arena Widget</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn-am.app-arena.com/v1/aa.sdk.dev.js"></script>
 </head>
 <body>
-<div id="widget-container"></div>
-<script src="/app.js"></script>
-
+<h1>App-Arena Test Page</h1>
 </body>
+
+<script>
+  window.aaDevWidgets = [
+    {
+      src: './app.js',
+      position: 'top right',
+      timeout: 1000
+    },
+  ];
+  window.analytics.initialize({
+    AppArena: {
+      companyId: <%= companyId %>
+    }
+  }, {})
+</script>
 </html>

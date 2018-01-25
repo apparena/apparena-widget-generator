@@ -16,15 +16,14 @@ const middleware = webpackMiddleware(compiler, {
 app.use(middleware);
 app.use(webpackHotMiddleware(compiler));
 
-app.get('/', (req, res) = > {
+app.get('/', (req, res) => {
   res.sendFile(path.resolve(customConfig.paths.root, 'index.html'));
-})
-;
+});
 
-app.listen(3001, 'localhost', (err, result) = > {
-  if(err) {
+app.listen(3001, 'localhost', (err, result) => {
+  if (err) {
     return console.log(err);
   }
 
   console.log('Listening at http://localhost:3001/');
-})
+});
