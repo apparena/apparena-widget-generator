@@ -93,7 +93,7 @@ module.exports = class extends Generator {
       },
       {
         type: 'Number',
-        name: 'name',
+        name: 'companyId',
         message: 'App-Arena CompanyId',
         required: true,
         default: 1

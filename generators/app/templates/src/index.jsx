@@ -10,6 +10,8 @@ import createStore from "./store/createStore";
 import {loadState} from "./helpers/localStorage";
 import "./components/index.scss"
 import config from './config/aa_config.json';
+import info from './config/aa_info.json';
+import translation from './config/aa_translation.json';
 
 // ========================================================
 // Setup
@@ -27,7 +29,9 @@ const state = {
   ...initialState,
   ...localStorageState,
   config,
-  appId: 'aa_config_app_id'
+  translation,
+  info,
+  appId: info.appId
 };
 
 const store = createStore(state, hashHistory);

@@ -1,18 +1,26 @@
 const fs = require('fs');
-const amConfig = require('./config.json');
+const path = require('path');
 
-fs.readFile("./dist/main.js", 'utf8', (err, data) => {
-    if (err) {
-        return console.log(err);
-    }
+const replaceValues = function (type) {
+  const srcPath = path.resolve(__dirname, `../../src/config/aa_${type}.json`);
+  if (fs.existsSync(srcPath)) {
+    console.log(`Start Replacing ${type} Values`);
+    const obj = require(srcPath);
 
-    let result = data;
-    amConfig.forEach((config) => {
-        const regExp = new RegExp(`aa_config_${config.configId}`, 'g');
-        result = result.replace(regExp, config.value);
+    let result = {};
+    Object.keys(obj).forEach((id) => {
+      result[id] = `aa_${type}_${id}`;
     });
 
-    fs.writeFile("./dist/main.js", result, 'utf8', (err) => {
-        if (err) return console.log(err);
+    fs.writeFile(`./src/config/aa_${type}_replaced.json`, JSON.stringify(result), 'utf8', (err) => {
+      if (err) return console.log(err);
     });
-});
+
+    console.log(`Finish Replacing ${type} Values`);
+  }
+};
+
+replaceValues('config');
+replaceValues('translation');
+replaceValues('info');
+

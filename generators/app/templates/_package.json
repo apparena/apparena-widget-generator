@@ -6,19 +6,12 @@
   "scripts": {
     "start": "node build/webpack/hot-reload-server.js",
     "test": "ava",
-    "build": "webpack --progress --config build/webpack/webpack.config.js",
-    "build:watch":
-      "webpack -w --progress --config build/webpack/webpack.config.js",
-    "build:prod":
-      "cross-env NODE_ENV=production webpack --progress --config build/webpack/webpack.config.js",
-    "build:stage":
-      "cross-env NODE_ENV=staging  webpack --progress --config build/webpack/webpack.config.js",
-    "build:profile":
-      "webpack --progress --profile --json > build/stats.json --config build/webpack/webpack.config.js",
-    "build:all": "npm run build:prod && npm run build:stage",
-    "aa:replace:config": "node build/apparena/config-replace.js"
+    "build:production": "node build/apparena/config-replace.js && NODE_ENV=production webpack --progress --config build/webpack/webpack.config.js",
+    "build:widget": "node build/apparena/build-widget.js"
   },
-  "keywords": ["apparena-widget"],
+  "keywords": [
+    "apparena-widget"
+  ],
   "author": "App-Arena GmbH",
   "license": "MIT",
   "devDependencies": {
@@ -108,7 +101,10 @@
   },
   "ava": {
     "verbose": true,
-    "require": ["babel-register", "ignore-styles"],
+    "require": [
+      "babel-register",
+      "ignore-styles"
+    ],
     "babel": "inherit"
   }
 }
