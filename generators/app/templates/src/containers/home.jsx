@@ -32,7 +32,11 @@ class HomeContainer extends ReactComponent {
    * @param event SyntheticEvent The event that was fired by React
    */
   onAnswer(index, event) {
-    this.props.addVote(index);
+    // Track Button click and send it to App-Arena Platform
+	this.props.track('Button Clicked', {
+	  value: index,
+	  text: this.props.config[`answer_${index}_text`]
+	});
 
     this.setState({
       showResults: true,
@@ -85,7 +89,7 @@ class HomeContainer extends ReactComponent {
   }
 
   renderView() {
-    if (this.state.showResults && this.props.config.final_page_select === 'thanks') {
+    if (this.state.showResults) {
       return (
         <div>
           <h2>{this.props.config.thankyou_page_content}</h2>
