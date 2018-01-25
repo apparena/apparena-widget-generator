@@ -16,7 +16,7 @@ export function identify(...args) {
     const appId = state.appId;
     if (appId && window.analytics) {
       window.analytics.options.appId = appId;
-      window.identify(...args);
+      window.analytics.identify(...args);
       delete window.analytics.options.appId;
       dispatch({
         type: actionTypes.identify,
@@ -38,7 +38,7 @@ export function track(...args) {
     const appId = state.appId;
     if (appId && window.analytics) {
       window.analytics.options.appId = appId;
-      window.track(...args);
+      window.analytics.track(...args);
       delete window.analytics.options.appId;
       dispatch({
         type: actionTypes.track,
@@ -60,7 +60,7 @@ export function group(...args) {
     const appId = state.appId;
     if (appId && window.analytics) {
       window.analytics.options.appId = appId;
-      window.group(...args);
+      window.analytics.group(...args);
       delete window.analytics.options.appId;
       dispatch({
         type: actionTypes.group,
@@ -82,7 +82,7 @@ export function page(...args) {
     const appId = state.appId;
     if (appId && window.analytics) {
       window.analytics.options.appId = appId;
-      window.page(...args);
+      window.analytics.page(...args);
       delete window.analytics.options.appId;
       dispatch({
         type: actionTypes.page,
@@ -104,7 +104,7 @@ export function alias(...args) {
     const appId = state.appId;
     if (appId && window.analytics) {
       window.analytics.options.appId = appId;
-      window.alias(...args);
+      window.analytics.alias(...args);
       delete window.analytics.options.appId;
       dispatch({
         type: actionTypes.alias,

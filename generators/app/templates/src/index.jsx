@@ -9,7 +9,7 @@ import AppContainer from "./containers/appContainer";
 import createStore from "./store/createStore";
 import {loadState} from "./helpers/localStorage";
 import "./components/index.scss"
-import config from './config/aa_config';
+import config from './config/aa_config.json';
 
 // ========================================================
 // Setup
@@ -27,9 +27,7 @@ const state = {
   ...initialState,
   ...localStorageState,
   config,
-  appId: 'aa_config_app_id',
-  hasVoted: false,
-  votedAnswer: false
+  appId: 'aa_config_app_id'
 };
 
 const store = createStore(state, hashHistory);

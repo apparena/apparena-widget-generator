@@ -92,6 +92,13 @@ module.exports = class extends Generator {
         default: path.basename(process.cwd())
       },
       {
+        type: 'Number',
+        name: 'name',
+        message: 'App-Arena CompanyId',
+        required: true,
+        default: 1
+      },
+      {
         type: 'input',
         name: 'description',
         message: 'Description',
@@ -208,7 +215,9 @@ module.exports = class extends Generator {
     // Let's extend package.json so we're not overwriting user previous fields
     this.fs.writeJSON(this.destinationPath('package.json'), pkg);
 
-    this.fs.copy(this.templatePath('index.html'), this.destinationPath('index.html'));
+    this.fs.copyTpl(this.templatePath('index.html'), this.destinationPath('index.html'), {
+      companyId: this.props.companyId
+    });
 
     this.fs.copy(this.templatePath('build'), this.destinationPath('build'));
 
