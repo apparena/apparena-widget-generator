@@ -11,6 +11,8 @@ describe('generator-apparena-widget:app', () => {
   });
 
   it('creates files', () => {
-    assert.file(['dummyfile.txt']);
+    assert.file(['package.json']);
+    assert.file(['readme.md']);
+    assert.file(['index.html']);
   });
 });

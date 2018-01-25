@@ -15,7 +15,8 @@
       "NODE_ENV=staging  webpack --progress --config build/webpack/webpack.config.js",
     "build:profile":
       "webpack --progress --profile --json > build/stats.json --config build/webpack/webpack.config.js",
-    "build:all": "npm run build:prod && npm run build:stage"
+    "build:all": "npm run build:prod && npm run build:stage",
+    "aa:replace:config": "node build/apparena/config-replace.js"
   },
   "keywords": ["apparena-widget"],
   "author": "App-Arena GmbH",

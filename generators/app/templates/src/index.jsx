@@ -9,16 +9,7 @@ import AppContainer from "./containers/appContainer";
 import createStore from "./store/createStore";
 import {loadState} from "./helpers/localStorage";
 import "./components/index.scss"
-
-const config = {
-  survey_prompt: 'aa_config_survey_prompt',
-  answer_1_text: 'aa_config_answer_1_text',
-  answer_2_text: 'aa_config_answer_2_text',
-  answer_3_text: 'aa_config_answer_3_text',
-  answer_4_text: 'aa_config_answer_4_text',
-  thankyou_page_content: 'aa_config_thankyou_page_content',
-  final_page_select: 'aa_config_final_page_select',
-};
+import config from './config/aa_config';
 
 // ========================================================
 // Setup

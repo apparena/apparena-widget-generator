@@ -31,7 +31,11 @@
     "yosay": "^2.0.1"
   },
   "jest": {
-    "testEnvironment": "node"
+    "testEnvironment": "node",
+    "testMatch": [
+      "<rootDir>/__tests__/**/*.js?(x)",
+      "<rootDir>/?(*.)(spec|test).js?(x)"
+    ]
   },
   "scripts": {
     "prepublish": "nsp check",

@@ -1,4 +1,10 @@
 export default {
-    addVote: 'ADD_VOTE',
-    addVoteError: 'ADD_VOTE_ERROR',
+  /**
+   * Log Events
+   */
+  identify: 'IDENTIFY',
+  track: 'TRACK',
+  group: 'GROUP',
+  page: 'PAGE',
+  alias: 'ALIAS',
 }

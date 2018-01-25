@@ -155,7 +155,6 @@ module.exports = class extends Generator {
   }
 
   writing() {
-    const ignoreArray = [];
     // Re-read the content at this point because a composed generator might modify it.
     var currentPkg = this.fs.readJSON(this.destinationPath('package.json'), {});
 
@@ -219,7 +218,7 @@ module.exports = class extends Generator {
 
     this.fs.copy(this.templatePath('src'), this.destinationPath('src'));
 
-    this.fs.copy(this.templatePath('test'), this.destinationPath('test'));
+    this.fs.copy(this.templatePath('__tests__'), this.destinationPath('__tests__'));
   }
 
   install() {
