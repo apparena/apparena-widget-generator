@@ -12,6 +12,7 @@
   "main": "generators/index.js",
   "keywords": ["apparena", "widget", "react", "redux", "yeoman-generator"],
   "devDependencies": {
+    "cross-env": "^5.1.3",
     "eslint": "^4.1.0",
     "eslint-config-prettier": "^2.4.0",
     "eslint-config-xo": "^0.18.2",
