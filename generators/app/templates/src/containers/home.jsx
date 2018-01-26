@@ -124,6 +124,10 @@ class HomeContainer extends ReactComponent {
   }
 }
 
+
+/**
+ * Bind actions and reducers to the current container (@see https://redux.js.org/docs/basics/UsageWithReact.html#implementing-container-components)
+ */
 export default connect(
   (state) => ({
     config: state.config,

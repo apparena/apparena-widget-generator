@@ -12,7 +12,8 @@
 ## Log to Big-Data Cluster
 1. Connect your Redux-Container to `src/actions/log` Actions.
 2. Call one of the Actions (track, identify, ...)
-3. All actions will be saved in Log-Reducer
+3. All actions will be saved in Log-Reducer (View them in Chrome Dev Tools Redux Store)
+
 
 Example:
 ```
@@ -20,6 +21,7 @@ this.props.page(); //Page tracking call
 ```
 
 ## Use App-Arena config values
+
 To build a Widget with custom App-Arena config values all `aa_config_{configId}`
 values are replaced by the customers config values
 
@@ -30,3 +32,8 @@ values are replaced by the customers config values
 `yarn run aa:config:replace` to build a widget main js file and replace
 your config values with the values inside of `build/apparena/config.json`
 
+
+## TODO
+
+1. Which API is available (resize, close, sendDataToCluster, ... )
+2. How to use the build scripts. Short description what they do and how to use them.
