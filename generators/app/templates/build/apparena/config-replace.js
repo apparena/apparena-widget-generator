@@ -21,6 +21,5 @@ const replaceValues = function (type) {
 };
 
 replaceValues('config');
-replaceValues('translation');
 replaceValues('info');
 

@@ -9,7 +9,7 @@ const replaceValues = function (result, type) {
     const obj = require(srcPath);
 
     obj.forEach((config) => {
-      const regExp = new RegExp(`aa_${type}_${config.configId}`, 'g');
+      const regExp = new RegExp(`aa_${type}_${config[`${type}Id`]}`, 'g');
       result = result.replace(regExp, config.value);
     });
     console.log(`Finish Replacing ${type} Values`);
@@ -25,7 +25,6 @@ if (fs.existsSync("./dist/main.min.js")) {
     }
 
     data = replaceValues(data, 'config');
-    data = replaceValues(data, 'translation');
     data = replaceValues(data, 'info');
 
     fs.writeFile(`./dist/main.${crypto.randomBytes(3).toString('hex')}.js`, data, 'utf8', (err) => {

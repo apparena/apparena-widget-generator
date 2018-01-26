@@ -13,3 +13,5 @@ jspm_packages
 /.webpack-cache/
 /config/.webpack-cache/
 /src/config/aa_config_replaced.json
+/src/config/aa_info_replaced.json
+/src/config/aa_translation_replaced.json

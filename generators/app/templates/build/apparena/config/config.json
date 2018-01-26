@@ -4,10 +4,6 @@
     "value": "Welche App hast du schon gekauft?"
   },
   {
-    "configId": "app_id",
-    "value": 21571
-  },
-  {
     "configId": "answer_1_text",
     "value": "Tippspiel"
   },
