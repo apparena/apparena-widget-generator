@@ -36,4 +36,3 @@ your config values with the values inside of `build/apparena/config.json`
 ## TODO
 
 1. Which API is available (resize, close, sendDataToCluster, ... )
-2. How to use the build scripts. Short description what they do and how to use them.
