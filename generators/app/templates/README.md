@@ -33,6 +33,17 @@ values are replaced by the customers config values
 your config values with the values inside of `build/apparena/config.json`
 
 
-## TODO
+## Frame Actions
 
-1. Which API is available (resize, close, sendDataToCluster, ... )
+All Widgets of App-Arena are loaded via the [analytics.js](https://github.com/apparena/analytics.js) 
+and build inside of an iframe with has 100% width and height on the customer website. To change positions or styles (width, height)
+of the container outside of the iframe we provide an global API automatically added to all widgets. You can access all 
+functions via ``window.frameActions``
+
+| Function        | Description                                                                  | Params            |
+|:----------------|:-----------------------------------------------------------------------------|:------------------|
+| close()         | Closes the Widget and Removes the Iframe from the website                    | -                 |
+| resize()        | Resize the hight, width of the widget based on the document height and width | -                 |
+| changeStyle({}) | You can change the Style of the container by passing an Style-Object         | {height: '500px'} |
+|                 |                                                                              |                   |
+|                 |                                                                              |                   |
